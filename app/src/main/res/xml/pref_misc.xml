@@ -184,8 +184,11 @@
 		    android:entryValues="@array/pref_misc_fod_color_values"
 		    android:key="key_misc_fod_color"
             android:title="Under-display fp color" />
-		<Preference android:title="Securize"
-            android:key="key_misc_securize" />
+		<CheckBoxPreference
+            android:defaultValue="false"
+            android:key="key_misc_securize"
+            android:title="Spoof system properties"
+            android:summary="For better chances of passing SafetyNet\nMight cause bootloop on some devices" />
 	</PreferenceCategory>
     <PreferenceCategory android:title="Debugging">
         <Preference android:title="Debug Sensors">
